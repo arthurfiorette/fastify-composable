@@ -1,7 +1,7 @@
 /**
  * The base type for all extensions.
  */
-export type FastifyExtensions = {
+export interface FastifyExtensions {
   /**
    * Extensions that will be applied to {@linkcode FastifyInstance}.
    */
@@ -21,4 +21,4 @@ export type FastifyExtensions = {
    * If this is a plugin, this will be the list of dependencies that this plugin needs to be registered.
    */
   dependencies?: FastifyExtensions;
-};
+}
